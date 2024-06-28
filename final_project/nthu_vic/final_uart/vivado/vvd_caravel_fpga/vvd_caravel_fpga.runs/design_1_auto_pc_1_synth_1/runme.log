@@ -1,0 +1,5 @@
+
+*** Running vivado
+    with args -log design_1_auto_pc_1.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_auto_pc_1.tcl
+
+/tools/Xilinx/Vivado/2022.1/bin/rdiArgs.sh: line 312: 11435 Killed                  "$RDI_PROG" "$@"
