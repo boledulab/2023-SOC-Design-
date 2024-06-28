@@ -2,7 +2,7 @@
 
 ---
 
-##Contributers
+## Contributers
 | Team | Github Link |
 | ----- | ----------- |
 | Leader | [陳冠晰/Vic Chen](https://github.com/vic9112) |
