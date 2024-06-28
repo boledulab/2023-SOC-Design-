@@ -1,0 +1,349 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:47:01 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Wed Oct 25 09:46:32 2023
+# Process ID: 827083
+# Current directory: /home/ubuntu/course-lab_3_FIR/FIR/FIR.runs/synth_1
+# Command line: vivado -log fir.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source fir.tcl
+# Log file: /home/ubuntu/course-lab_3_FIR/FIR/FIR.runs/synth_1/fir.vds
+# Journal file: /home/ubuntu/course-lab_3_FIR/FIR/FIR.runs/synth_1/vivado.jou
+# Running On: ubuntu2004, OS: Linux, CPU Frequency: 2592.002 MHz, CPU Physical cores: 2, Host memory: 10425 MB
+#-----------------------------------------------------------
+source fir.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental /home/ubuntu/course-lab_3_FIR/FIR/FIR.srcs/utils_1/imports/synth_1/fir.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from /home/ubuntu/course-lab_3_FIR/FIR/FIR.srcs/utils_1/imports/synth_1/fir.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top fir -part xc7z020clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 827121
+WARNING: [Synth 8-6901] identifier 'ap_ctrl' is used before its declaration [/home/ubuntu/course-lab_3_FIR/FIR/FIR.srcs/sources_1/new/fir.v:71]
+WARNING: [Synth 8-6901] identifier 'tlast_cnt' is used before its declaration [/home/ubuntu/course-lab_3_FIR/FIR/FIR.srcs/sources_1/new/fir.v:82]
+WARNING: [Synth 8-6901] identifier 'data_length' is used before its declaration [/home/ubuntu/course-lab_3_FIR/FIR/FIR.srcs/sources_1/new/fir.v:82]
+WARNING: [Synth 8-6901] identifier 'tlast_cnt' is used before its declaration [/home/ubuntu/course-lab_3_FIR/FIR/FIR.srcs/sources_1/new/fir.v:115]
+WARNING: [Synth 8-6901] identifier 'data_length' is used before its declaration [/home/ubuntu/course-lab_3_FIR/FIR/FIR.srcs/sources_1/new/fir.v:115]
+WARNING: [Synth 8-6901] identifier 'tap_AR' is used before its declaration [/home/ubuntu/course-lab_3_FIR/FIR/FIR.srcs/sources_1/new/fir.v:150]
+WARNING: [Synth 8-6901] identifier 'ss_idle' is used before its declaration [/home/ubuntu/course-lab_3_FIR/FIR/FIR.srcs/sources_1/new/fir.v:155]
+WARNING: [Synth 8-6901] identifier 'init_addr' is used before its declaration [/home/ubuntu/course-lab_3_FIR/FIR/FIR.srcs/sources_1/new/fir.v:156]
+WARNING: [Synth 8-6901] identifier 'init_addr' is used before its declaration [/home/ubuntu/course-lab_3_FIR/FIR/FIR.srcs/sources_1/new/fir.v:156]
+WARNING: [Synth 8-6901] identifier 'data_A_tmp' is used before its declaration [/home/ubuntu/course-lab_3_FIR/FIR/FIR.srcs/sources_1/new/fir.v:156]
+WARNING: [Synth 8-6901] identifier 'k' is used before its declaration [/home/ubuntu/course-lab_3_FIR/FIR/FIR.srcs/sources_1/new/fir.v:182]
+WARNING: [Synth 8-6901] identifier 'y_cnt' is used before its declaration [/home/ubuntu/course-lab_3_FIR/FIR/FIR.srcs/sources_1/new/fir.v:185]
+WARNING: [Synth 8-6901] identifier 'y' is used before its declaration [/home/ubuntu/course-lab_3_FIR/FIR/FIR.srcs/sources_1/new/fir.v:186]
+WARNING: [Synth 8-6901] identifier '_sm_tlast' is used before its declaration [/home/ubuntu/course-lab_3_FIR/FIR/FIR.srcs/sources_1/new/fir.v:188]
+WARNING: [Synth 8-6901] identifier 'tlast_cnt_tmp' is used before its declaration [/home/ubuntu/course-lab_3_FIR/FIR/FIR.srcs/sources_1/new/fir.v:250]
+WARNING: [Synth 8-6901] identifier 'x_sel' is used before its declaration [/home/ubuntu/course-lab_3_FIR/FIR/FIR.srcs/sources_1/new/fir.v:322]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2903.082 ; gain = 0.000 ; free physical = 163 ; free virtual = 2646
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'fir' [/home/ubuntu/course-lab_3_FIR/FIR/FIR.srcs/sources_1/new/fir.v:13]
+INFO: [Synth 8-226] default block is never used [/home/ubuntu/course-lab_3_FIR/FIR/FIR.srcs/sources_1/new/fir.v:196]
+INFO: [Synth 8-6155] done synthesizing module 'fir' (0#1) [/home/ubuntu/course-lab_3_FIR/FIR/FIR.srcs/sources_1/new/fir.v:13]
+WARNING: [Synth 8-3917] design fir has port awready driven by constant 1
+WARNING: [Synth 8-3917] design fir has port wready driven by constant 1
+WARNING: [Synth 8-3917] design fir has port tap_EN driven by constant 1
+WARNING: [Synth 8-3917] design fir has port tap_A[11] driven by constant 0
+WARNING: [Synth 8-3917] design fir has port tap_A[10] driven by constant 0
+WARNING: [Synth 8-3917] design fir has port tap_A[9] driven by constant 0
+WARNING: [Synth 8-3917] design fir has port tap_A[8] driven by constant 0
+WARNING: [Synth 8-3917] design fir has port tap_A[7] driven by constant 0
+WARNING: [Synth 8-3917] design fir has port data_A[11] driven by constant 0
+WARNING: [Synth 8-3917] design fir has port data_A[10] driven by constant 0
+WARNING: [Synth 8-3917] design fir has port data_A[9] driven by constant 0
+WARNING: [Synth 8-3917] design fir has port data_A[8] driven by constant 0
+WARNING: [Synth 8-3917] design fir has port data_A[7] driven by constant 0
+WARNING: [Synth 8-7129] Port rready in module fir is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sm_tready in module fir is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2903.082 ; gain = 0.000 ; free physical = 1269 ; free virtual = 3735
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2903.082 ; gain = 0.000 ; free physical = 1269 ; free virtual = 3735
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2903.082 ; gain = 0.000 ; free physical = 1269 ; free virtual = 3735
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2903.082 ; gain = 0.000 ; free physical = 1269 ; free virtual = 3735
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/ubuntu/course-lab_3_FIR/FIR/FIR.srcs/constrs_1/new/fir_timing.xdc]
+INFO: [Constraints 18-632] set_input_delay: No clock object specified, the clocks will be automatically identified [/home/ubuntu/course-lab_3_FIR/FIR/FIR.srcs/constrs_1/new/fir_timing.xdc:3]
+INFO: [Constraints 18-632] set_output_delay: No clock object specified, the clocks will be automatically identified [/home/ubuntu/course-lab_3_FIR/FIR/FIR.srcs/constrs_1/new/fir_timing.xdc:6]
+Finished Parsing XDC File [/home/ubuntu/course-lab_3_FIR/FIR/FIR.srcs/constrs_1/new/fir_timing.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2919.090 ; gain = 0.000 ; free physical = 1187 ; free virtual = 3653
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2919.090 ; gain = 0.000 ; free physical = 1187 ; free virtual = 3653
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2919.090 ; gain = 16.008 ; free physical = 1254 ; free virtual = 3720
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2919.090 ; gain = 16.008 ; free physical = 1254 ; free virtual = 3720
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2919.090 ; gain = 16.008 ; free physical = 1254 ; free virtual = 3720
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'ap_state_reg' in module 'fir'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE1 |                               00 |                               01
+                 iSTATE0 |                               01 |                               00
+                  iSTATE |                               10 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'ap_state_reg' using encoding 'sequential' in module 'fir'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 2919.090 ; gain = 16.008 ; free physical = 1244 ; free virtual = 3711
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 1     
+	   2 Input   10 Bit       Adders := 2     
+	   2 Input    6 Bit       Adders := 1     
+	   3 Input    6 Bit       Adders := 1     
+	   2 Input    5 Bit       Adders := 2     
+	   2 Input    4 Bit       Adders := 2     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 6     
+	               10 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 3     
++---Multipliers : 
+	              32x32  Multipliers := 1     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 7     
+	   2 Input    6 Bit        Muxes := 3     
+	   2 Input    5 Bit        Muxes := 3     
+	   2 Input    4 Bit        Muxes := 4     
+	   2 Input    3 Bit        Muxes := 1     
+	   3 Input    3 Bit        Muxes := 1     
+	   3 Input    2 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 3     
+	   2 Input    1 Bit        Muxes := 8     
+	   3 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+DSP Report: Generating DSP m_tmp, operation Mode is: A*B.
+DSP Report: operator m_tmp is absorbed into DSP m_tmp.
+DSP Report: operator m_tmp is absorbed into DSP m_tmp.
+DSP Report: Generating DSP m_tmp, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator m_tmp is absorbed into DSP m_tmp.
+DSP Report: operator m_tmp is absorbed into DSP m_tmp.
+DSP Report: Generating DSP m_tmp, operation Mode is: A*B.
+DSP Report: operator m_tmp is absorbed into DSP m_tmp.
+DSP Report: operator m_tmp is absorbed into DSP m_tmp.
+DSP Report: Generating DSP m_tmp, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator m_tmp is absorbed into DSP m_tmp.
+DSP Report: operator m_tmp is absorbed into DSP m_tmp.
+WARNING: [Synth 8-3917] design fir has port awready driven by constant 1
+WARNING: [Synth 8-3917] design fir has port wready driven by constant 1
+WARNING: [Synth 8-3917] design fir has port tap_EN driven by constant 1
+WARNING: [Synth 8-3917] design fir has port tap_A[11] driven by constant 0
+WARNING: [Synth 8-3917] design fir has port tap_A[10] driven by constant 0
+WARNING: [Synth 8-3917] design fir has port tap_A[9] driven by constant 0
+WARNING: [Synth 8-3917] design fir has port tap_A[8] driven by constant 0
+WARNING: [Synth 8-3917] design fir has port tap_A[7] driven by constant 0
+WARNING: [Synth 8-3917] design fir has port tap_A[6] driven by constant 0
+WARNING: [Synth 8-3917] design fir has port data_A[11] driven by constant 0
+WARNING: [Synth 8-3917] design fir has port data_A[10] driven by constant 0
+WARNING: [Synth 8-3917] design fir has port data_A[9] driven by constant 0
+WARNING: [Synth 8-3917] design fir has port data_A[8] driven by constant 0
+WARNING: [Synth 8-3917] design fir has port data_A[7] driven by constant 0
+WARNING: [Synth 8-3917] design fir has port data_A[6] driven by constant 0
+WARNING: [Synth 8-7129] Port rready in module fir is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sm_tready in module fir is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 2919.090 ; gain = 16.008 ; free physical = 1216 ; free virtual = 3687
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|fir         | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fir         | (PCIN>>17)+A*B | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fir         | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fir         | (PCIN>>17)+A*B | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 2919.090 ; gain = 16.008 ; free physical = 1077 ; free virtual = 3548
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 2919.090 ; gain = 16.008 ; free physical = 1076 ; free virtual = 3547
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 2919.090 ; gain = 16.008 ; free physical = 1063 ; free virtual = 3534
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 2919.090 ; gain = 16.008 ; free physical = 1063 ; free virtual = 3534
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 2919.090 ; gain = 16.008 ; free physical = 1063 ; free virtual = 3534
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 2919.090 ; gain = 16.008 ; free physical = 1063 ; free virtual = 3534
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 2919.090 ; gain = 16.008 ; free physical = 1063 ; free virtual = 3534
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 2919.090 ; gain = 16.008 ; free physical = 1063 ; free virtual = 3534
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 2919.090 ; gain = 16.008 ; free physical = 1063 ; free virtual = 3534
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping  | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|fir         | A*B          | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fir         | PCIN>>17+A*B | 0      | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fir         | A*B          | 17     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |BUFG    |     1|
+|2     |CARRY4  |    18|
+|3     |DSP48E1 |     3|
+|4     |LUT1    |     2|
+|5     |LUT2    |   103|
+|6     |LUT3    |    66|
+|7     |LUT4    |    81|
+|8     |LUT5    |    27|
+|9     |LUT6    |    27|
+|10    |FDCE    |   215|
+|11    |FDPE    |     8|
+|12    |FDRE    |     1|
+|13    |IBUF    |   159|
+|14    |OBUF    |   169|
++------+--------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 2919.090 ; gain = 16.008 ; free physical = 1063 ; free virtual = 3534
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 18 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 2919.090 ; gain = 0.000 ; free physical = 1136 ; free virtual = 3607
+Synthesis Optimization Complete : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 2919.098 ; gain = 16.008 ; free physical = 1136 ; free virtual = 3607
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2919.098 ; gain = 0.000 ; free physical = 1237 ; free virtual = 3708
+INFO: [Netlist 29-17] Analyzing 21 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2919.098 ; gain = 0.000 ; free physical = 1184 ; free virtual = 3655
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: 288b6429
+INFO: [Common 17-83] Releasing license: Synthesis
+27 Infos, 49 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:26 ; elapsed = 00:00:25 . Memory (MB): peak = 2919.098 ; gain = 16.016 ; free physical = 1383 ; free virtual = 3854
+INFO: [Common 17-1381] The checkpoint '/home/ubuntu/course-lab_3_FIR/FIR/FIR.runs/synth_1/fir.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file fir_utilization_synth.rpt -pb fir_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Oct 25 09:47:06 2023...
